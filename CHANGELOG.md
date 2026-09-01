@@ -11,7 +11,7 @@
 - stop the panel from stretching across the left side of the screen: the frame and its tables now hug their content (sizing done in style prototypes, so the game's "UI scale" setting is still respected)
 - always clip player names (to 12 characters, plus an ellipsis) so one long nick can no longer widen the panel
 - new per-player "Compact mode" setting: tightens the layout and clips names harder still (to 6 characters), for when the panel still gets in the way
-- add `slondo-ptbr` as an optional dependency for the Brazilian Portuguese (pt-BR) locale
+- point users to the `slondo-ptbr` pack for the pt-BR locale from the description (not as a dependency: it already load-orders after this mod, so an optional dependency back would be a cycle)
 
 ## 0.2.3
 - depend on `kry_stdlib` instead of the unmaintained `stdlib` (mod-portal-only release; the `control.lua` require path was missed)

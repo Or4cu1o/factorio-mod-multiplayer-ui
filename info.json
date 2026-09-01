@@ -7,8 +7,7 @@
     "dependencies": [
         "base >= 2.0",
         "kry_stdlib",
-        "? space-age",
-        "? slondo-ptbr >= 2.0.0"
+        "? space-age"
     ],
-    "description": "Show list of players on server"
+    "description": "Show list of players on server. Brazilian Portuguese locale is provided by the separate slondo-ptbr mod."
 }
