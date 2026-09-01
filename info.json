@@ -1,8 +1,8 @@
 {
-    "name": "multiplayer-ui",
+    "name": "multiplayer-ui-continued",
     "version": "0.3.0",
-    "title": "Multiplayer UI",
-    "author": "Bykow",
+    "title": "Multiplayer UI (continued)",
+    "author": "Or4cu1o",
     "factorio_version": "2.0",
     "dependencies": [
         "base >= 2.0",
