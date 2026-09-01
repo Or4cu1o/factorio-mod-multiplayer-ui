@@ -47,7 +47,15 @@ data:extend {
     name = "multiplayer-ui-max-players",
     setting_type = "runtime-per-user",
     default_value = 5,
+    minimum_value = 1,
     order = "ga"
+  },
+  {
+    type = "bool-setting",
+    name = "multiplayer-ui-compact-mode",
+    setting_type = "runtime-per-user",
+    default_value = false,
+    order = "gb"
   },
   {
     type = "bool-setting",
