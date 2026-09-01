@@ -46,7 +46,7 @@ data:extend {
     type = "int-setting",
     name = "multiplayer-ui-max-players",
     setting_type = "runtime-per-user",
-    default_value = 5,
+    default_value = 8,
     minimum_value = 1,
     order = "ga"
   },
