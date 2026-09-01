@@ -1,6 +1,6 @@
 -------------- include Class libs ----------------
 -- require "core/Class"
-Position = require '__stdlib__/stdlib/area/position'
+Position = require '__kry_stdlib__/stdlib/area/position'
 
 -------------- include Debug libs ----------------
 require "core.Debug"

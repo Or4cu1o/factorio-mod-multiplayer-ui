@@ -31,8 +31,11 @@ function PlayersList:getArmor(player)
     return nil
   end
 
-  for _, count in pairs(inventory.get_contents()) do
-    return _
+  -- Factorio 2.0: LuaInventory.get_contents() returns an array of
+  -- { name = ..., count = ..., quality = ... } instead of a { [name] = count } map.
+  local contents = inventory.get_contents()
+  if contents[1] then
+    return contents[1].name
   end
 
   return nil
@@ -68,7 +71,7 @@ function PlayersList:playerElement(listBox, player)
     playerTopDesc.add { type = "label", caption = '([font=technology-slot-level-font]offline[/font])' }
   end
   local playerBottomDesc = playerDesc.add { type = "table", column_count = 2 }
-  if showGroup then
+  if showGroup and player.permission_group then
     playerBottomDesc.add { type = "label", caption = '[font=technology-slot-level-font]' .. player.permission_group.name .. '[/font]' }
   end
 
